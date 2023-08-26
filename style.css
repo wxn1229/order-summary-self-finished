@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: "Red Hat Display";
+    position: relative;
+    background-color: hsl(225, 100%, 94%);
+    font-size: 16px;
+}
+
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    width: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+.content{
+    padding: 12%;
+    text-align: center;
+}
+.title{
+    font-weight: 900;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: hsl(223, 47%, 23%);
+    
+
+}
+.subtitle p{
+    color: hsl(224, 23%, 55%);
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 6%;
+    
+
+        
+}
+
+.plan-box{
+    background-color:hsl(225, 100%, 98%) ;
+    display: flex;
+    padding: 7%;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+}
+.text {
+    flex:10;
+    text-align: left;
+    padding-left: 10px;
+    transform: translateX(7px);
+}
+.plan-box > .icon , .plan-box > .change{
+    flex:1;
+}
+
+.text h5{
+    color: hsl(223, 47%, 23%);
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+.text p{
+    color: hsl(224, 23%, 55%);
+    margin-top: 3px;
+}
+.proceed{
+    display: block;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    padding:5% 2% ;
+    margin-top:5%;
+    margin-bottom: 5%;
+    border-radius: 12px;
+    box-shadow: 1px 17px 30px hsl(245, 49%, 78%);
+    font-weight: 900;
+    text-decoration: none;
+
+}
+
+.proceed:hover{
+    background-color: hsl(244.51deg 82.61% 68.43%);
+    transition: color, 0.2s ease;
+}
+
+
+.cancel{
+    padding-bottom: 7%;
+    position: relative;
+    top: 16px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.cancel:hover{
+    color: hsl(223, 47%, 23%);
+    transition: color, 0.2s ease;
+}
+
+.change{
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+
+.change:hover{
+    color: hsl(244.51deg 82.61% 68.43%);
+    transition: color, 0.2s ease;
+    text-decoration: none;
+}
+
+
+.hero img{
+    width:100%;
+}
+
+
+
+ @media only screen and (max-width: 450px){
+    body{
+        background-image: url("images/pattern-background-mobile.svg");
+        font-size: 14px;
+    }
+
+    .container{
+        max-width: 87%;
+        
+    }
+    
+    .content{
+        padding: 7%;
+        padding-bottom: 12%;
+    }
+    .cancel{
+        top: 8px;
+    }
+
+    .proceed{
+        box-shadow: 1px 13px 30px hsl(245, 49%, 78%);
+    }
+    
+    .subtitle p{
+        width: 90%;
+        line-height: 20px;
+    }
+    .text p{
+        font-size: 16px;
+    }
+ }
